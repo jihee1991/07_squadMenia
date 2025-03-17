@@ -1,0 +1,186 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquadMania</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script defer src="./js/header.js"></script>
+    <script defer src="./js/aside.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <my-header></my-header>
+
+    <div class="ad-banner">광고 배너 자리</div>
+
+    <div class="main-content">
+        <nav class="tab_nav">
+            <a href="">홈</a>
+            <a href="">게시판</a>
+            <a href="">핫게시글</a>
+            <a href="">검색</a>
+        </nav>
+
+        <div class="container">
+            <my-asidemenu></my-asidemenu>
+
+            <section class="contents_wrap">
+                <div class="board_container">
+                    <div class="board_header">매니아톡</div>
+
+                    <!-- 공지사항 & 축구/FC온라인 -->
+                    <div class="board-top">
+                        <div class="board-box">
+                            <h4>🔥 공지사항</h4>
+                            <ul class="box_list">
+                                <li><a href="#">[공지] 게시판 이용 안내 드립니다.</a></li>
+                                <li><a href="#">[업데이트] 알림</a></li>
+                                <li><a href="#">오류 관련 공지</a></li>
+                                <li><a href="#">[업데이트] 선수 데이터 업데이트 완료</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="board-box">
+                            <h4>⚽ 축구/FC온라인</h4>
+                            <ul class="box_list">
+                                <li><a href="#">20조 EP 사기 가성비 스쿼드</a></li>
+                                <li><a href="#">미국스쿼드 어떤가요</a></li>
+                                <li><a href="#">레알 현역 팀평해주세요</a></li>
+                                <li><a href="#">꼬마 팀평좀여</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="board_listwrap">
+                        <!-- 상단 필터 -->
+                        <div class="top-controls">
+                            <select id="sortOption">
+                                <option value="latest">최신순</option>
+                                <option value="views">조회순</option>
+                                <option value="recommend">추천순</option>
+                            </select>
+                        </div>
+
+                        <!-- 탭 메뉴 -->
+                        <div class="tabs">
+                            <div class="tab active" data-category="all">전체</div>
+                            <div class="tab" data-category="공지">공지사항</div>
+                            <div class="tab" data-category="축구">축구/FC온라인</div>
+                        </div>
+                        <!-- 게시판 테이블 -->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th></th>
+                                    <th>제목</th>
+                                    <th>글쓴이</th>
+                                    <th>등록일</th>
+                                    <th>조회</th>
+                                    <th>추천</th>
+                                </tr>
+                            </thead>
+                            <tbody id="boardList">
+                                <tr data-category="공지" data-views="1200" data-recommend="20" data-date="2025-03-18">
+                                    <td>8378999</td>
+                                    <td><span class="user_icon"></span></td>
+                                    <td>[공지] 게시판 이용 안내 드립니다.</td>
+                                    <td>개발자</td>
+                                    <td>00:19</td>
+                                    <td>1,200</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr data-category="공지" data-views="1200" data-recommend="20" data-date="2025-03-18">
+                                    <td>8378999</td>
+                                    <td><span class="user_icon"></span></td>
+                                    <td>[업데이트] 알림</td>
+                                    <td>개발자</td>
+                                    <td>00:19</td>
+                                    <td>1,200</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr data-category="공지" data-views="1200" data-recommend="20" data-date="2025-03-18">
+                                    <td>8378999</td>
+                                    <td><span class="user_icon"></span></td>
+                                    <td>오류 관련 공지</td>
+                                    <td>개발자</td>
+                                    <td>00:19</td>
+                                    <td>1,200</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr data-category="공지" data-views="1200" data-recommend="20" data-date="2025-03-18">
+                                    <td>8378999</td>
+                                    <td><span class="user_icon"></span></td>
+                                    <td>[업데이트] 선수 데이터 업데이트 완료</td>
+                                    <td>개발자</td>
+                                    <td>00:19</td>
+                                    <td>1,200</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr data-category="축구" data-views="4500" data-recommend="50" data-date="2025-03-17">
+                                    <td>8378900</td>
+                                    <td><span class="user_icon"></span></td>
+                                    <td>20조 EP 사기 가성비 스쿼드</td>
+                                    <td>도루</td>
+                                    <td>00:12</td>
+                                    <td>4,500</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr data-category="축구" data-views="9000" data-recommend="80" data-date="2025-03-16">
+                                    <td>8378750</td>
+                                    <td><span class="user_icon"></span></td>
+                                    <td>미국스쿼드 어떤가요</td>
+                                    <td>축구왕</td>
+                                    <td>03-16</td>
+                                    <td>9,000</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr data-category="축구" data-views="9000" data-recommend="80" data-date="2025-03-16">
+                                    <td>8378750</td>
+                                    <td><span class="user_icon"></span></td>
+                                    <td>레알 현역 팀평해주세요</td>
+                                    <td>바나나우유조마텡</td>
+                                    <td>03-16</td>
+                                    <td>9,000</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr data-category="축구" data-views="9000" data-recommend="80" data-date="2025-03-16">
+                                    <td>8378750</td>
+                                    <td><span class="user_icon"></span></td>
+                                    <td>꼬마 팀평좀요</td>
+                                    <td>바나나우유조마텡</td>
+                                    <td>03-16</td>
+                                    <td>9,000</td>
+                                    <td>80</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- <footer class="footer">
+        <p>© 2025 게임 커뮤니티. All rights reserved.</p>
+    </footer> -->
+    <script src="./js/scripts.js"></script>
+    <script src="./js/board-data.js"></script>
+</body>
+</html>

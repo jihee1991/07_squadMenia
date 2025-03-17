@@ -1,0 +1,182 @@
+<html lang="ko">
+<head>
+    <title>SquadMania</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script defer src="../js/header.js"></script>
+    <script defer src="../js/aside.js"></script>
+    <script defer src="../js/board.js"></script>
+    <script src="https://kit.fontawesome.com/5bcfc28277.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <my-header></my-header>
+
+    <div class="ad-banner">광고 배너 자리</div>
+
+    <div class="main-content">
+        <nav class="tab_nav">
+            <a href="">홈</a>
+            <a href="">게시판</a>
+            <a href="">핫게시글</a>
+            <a href="">검색</a>
+        </nav>
+
+        <div class="container">
+            <my-asidemenu></my-asidemenu>
+
+            <div class="contents_wrap">
+                <div class="board_detail_view">
+                    <!-- 상단 버튼 -->
+                    <section class="detail_view_top">
+                        <div class="top_btns_wrap">
+                            <button class="btn_share">공유하기</button>
+                            <button class="btn_address">주소보기</button>
+                            <button class="btn_copy">복사</button>
+                        </div>
+                        <span class="view_title">축구/FC온라인</span>
+                    </section>
+            
+                    <!-- 프로필 정보 -->
+                    <section class="writer_info">
+                        <div class="user_index">
+                            <img src="https://via.placeholder.com/40" class="user_img" alt="프로필 이미지">
+                            <p class="name">TEST User</p>
+                        </div>
+                        <div class="doc_index">
+                            <p class="date">2025-03-09 01:11</p>
+                            <p class="hit">조회: 16 | 추천: 0</p>
+                        </div>
+                    </section>
+            
+                    <!-- 본문 -->
+                    <section class="present">
+                        <article>
+                            <h1>아스널 리빌딩 완료</h1>
+                            <div class="test_text">
+                                <div class="board_uploadImg"></div>
+                                <p>
+                                    조금더 현역느낌으로 리빌딩 했어요. <br>
+                                    사기는 돈모아서 7카나 급여감 안하면 될듯합니다. <br>
+                                    벨링에서 외데고르 은카가 별로면 어떡하나 싶었는데 <br>
+                                    생각보다 외데고르가 너무 제 스타일이네요. <br>
+                                    특히나 패스랑 컷백이 정확도가 말이 안되게 좋네요..
+                                </p>
+                            </div>
+                        </article>
+                    </section>
+            
+                    <!-- SUB 버튼 및 댓글 기능 -->
+                    <section class="post_area">
+                        <div class="postbtns_box">
+                            <div class="wrap_post box_left">
+                                <div class="box_inner like_article">
+                                    <span class="ic_area like_module">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <!-- <i class="fa-solid fa-heart"></i> -->
+                                    </span>    
+                                    <div class="text">좋아요</div>
+                                </div>
+                                <div class="box_inner reply_article">
+                                    <span class="ic_area commment_module">
+                                        <i class="fa-regular fa-comment"></i>
+                                    </span>
+                                    <div class="comment_link">댓글</div>
+                                </div>
+                            </div>
+                            <div class="wrap_post box_right">
+                                <div class="box_inner social_article">
+                                    <span class="ic_area share_module">
+                                        <i class="fa-regular fa-share-from-square"></i>
+                                    </span>    
+                                    <div class="text">공유</div>
+                                </div>
+                                <div class="box_inner report_article">
+                                    <span class="ic_area declare_module">
+                                        <i class="fa-regular fa-bell"></i>
+                                    </span>  
+                                    <div class="comment_link">신고</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment-box">
+                            <div class="nickname" id="userNickname">jjxg2</div>
+                            <!-- 입력 영역 -->
+                            <textarea 
+                                id="commentInput" 
+                                class="comment-input" 
+                                rows="2" 
+                                placeholder="댓글을 남겨보세요"
+                                oninput="toggleSubmitButton()"
+                            ></textarea>
+                            <div class="comment-actions">
+                                <button class="icon-button"><i class="fa-regular fa-images"></i></button> 
+                                <button id="submitButton" class="submit-button" disabled>등록</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 하단 메뉴 -->
+                    <div class="btm_last_wrap">
+                        <div class="box_inner box_left">
+                            <!-- 왼쪽 버튼 -->
+                            <button class="btn btn-write">
+                                <span class="btn-icon"><i class="fa-solid fa-pen-to-square"></i></span> 글쓰기
+                            </button>
+                            <button class="btn btn-secondary">답글</button>
+                        </div>
+                
+                        <!-- 오른쪽 버튼 -->
+                        <div class="box_inner box_right">
+                            <button class="btn btn-secondary">목록</button>
+                            <button class="btn btn-secondary" onclick="scrollToTop()">TOP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer class="footer">
+        <p>© 2025 게임 커뮤니티. All rights reserved.</p>
+    </footer> -->
+
+    <script>
+        // 댓글 입력 시 '등록' 버튼 활성화
+        function toggleSubmitButton() {
+            const input = document.getElementById("commentInput").value.trim();
+            const submitButton = document.getElementById("submitButton");
+
+            if (input.length > 0) {
+                submitButton.classList.add("active");
+                submitButton.disabled = false;
+            } else {
+                submitButton.classList.remove("active");
+                submitButton.disabled = true;
+            }
+        }
+    </script>
+    <script>
+        // TOP 버튼 클릭 시 스크롤 맨 위로 이동
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
